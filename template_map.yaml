@@ -1,0 +1,20 @@
+simulation_modules:
+  patching:
+    file: scripts/patch_cycle.ps1
+    description: Monthly patch readiness validation script
+    escalation: escalation/tier3_escalation_protocol.md
+    triggers:
+      - last_patch_date < today - 30d
+      - non-compliant system flags
+
+  automation:
+    file: automation/intune_autopilot.ps1
+    description: Autopilot provisioning simulation
+
+  compliance:
+    file: compliance/azuread_compliance_map.md
+    description: Simulated device compliance mappings
+
+  monitoring:
+    file: monitoring/o365_av_status.md
+    description: O365 AV protection status validation
