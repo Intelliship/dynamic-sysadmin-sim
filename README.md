@@ -45,3 +45,4 @@ Simulation scaffolding is complete. Additional modules (e.g. Active Directory jo
 ## Author's Note
 
 This simulation is based on actual systems engineering engagements. It reflects a disciplined approach to process discovery, modeling environments where operational speed, risk signals, and automation readiness must coexist. Each module was written to tell a story—validating that the design makes sense, not just that the code runs.
+# enterprise-infra-hybrid-hardening
